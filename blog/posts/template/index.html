@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="moja">
+    <h1>CVL Service blog</h1>
+</div>
+
+<div id="box-container">
+<div id="row">
+{% for post in posts reversed %}
+<div class="mbili" >
+        <h3>{{ post.title }}</h3>
+        <p>{{post.created_at}} </p>
+        <p>{{post.body|truncatewords:20}} </p>
+        <a href="/post/{{post.id}}" class="unda">LEARN MORE</a>
+</div>
+{% endfor %}
+</div>
+{% block sidebar %}
+{% include 'sidebar.html' %}
+{% endblock %}
+</div>
+
+
+{% endblock %}

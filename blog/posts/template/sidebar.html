@@ -1,0 +1,14 @@
+{% block sidebar %}
+{% load static %}
+
+<div class="sidebar" style="color: aliceblue;">
+    <h3 style="color: black; text-decoration: underline;">About Us</h3>
+    <p>
+        We support businesses like yours by letting <strong>YOU</strong> take the credit as <strong>WE</strong> process the
+        debit.
+    </p>
+    <p>You can also contact us at...</p>
+    <br>
+    <a href="{% url 'posts:contact' %}" class="unda" >CONTACT US</a>
+  </div>
+  {% endblock %}

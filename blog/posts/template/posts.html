@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVL blog</title>
+
+    <link rel="shortcut icon" href="{% static 'chalen_logo-removebg-preview.png' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="moja">
+    <h1>CVL Service blog</h1>
+</div>
+
+
+<div id="mbil">
+        <h3>{{posts.title }}</h3>
+        <p>{{posts.created_at}} </p>
+        <p>{{posts.body}} </p>
+</div>
+
+
+</body>
+</html>
